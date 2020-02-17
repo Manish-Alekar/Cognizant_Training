@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+<head>
+<script>
+function add(){
+var a,b,c;
+a=Number(document.getElementById("first").value);
+b=Number(document.getElementById("second").value);
+c=Number(document.getElementById("third").value);
+d= a + b + c;
+document.getElementById("answer").value= d;
+}
+function mul(){
+var a,b,c;
+a=Number(document.getElementById("first").value);
+b=Number(document.getElementById("second").value);
+c=Number(document.getElementById("third").value);
+e= a * b * c;
+document.getElementById("answer").value= e;
+}
+</script>
+</head>
+<body>
+Enter the First number : <input id="first"><br><br>
+Enter the Second number: <input id="second"><br><br>
+Enter the Third number: <input id="third"><br><br>
+<button onclick="add()">Add</button>&nbsp;&nbsp;&nbsp;
+<button onclick="mul()">Multiply</button><br><br>
+Result : <input id="answer">
+</body>
+</html>

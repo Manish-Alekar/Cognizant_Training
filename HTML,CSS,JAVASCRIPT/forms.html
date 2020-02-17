@@ -1,0 +1,79 @@
+<DOCTYPE!html>
+<html>
+<head>
+<title> FORM EXAMPLE</title>
+<link rel = "icon" href='images/animal.jpg'/>
+<META CHARSET="utf-8">
+</head>
+<body>
+      <!--blank-->
+	  
+	  <img src="animal.jpg"  alt="Italian Trulli"
+	  width="300" height="200">  <br>
+	  
+	  
+	  
+	 
+	  <form action="/action_page.php" method="post">
+	  Fname<br>
+	  <input type="text" name="name"> <br> <br>
+	  Lname<br>
+	  <input type="text"name="lname" required><br> <br>
+	  <input type="radio" name="gender"value="male" checked > male <br>
+	  <input type="radio" name="gender"value="female"> Female<br> <br>
+	  <input type="submit" value="submit">
+	  </form>
+	  
+<h3> second form..</h3>
+    <form target="_self">
+	<fieldset>
+	   <legend> person information </legend>
+	Fname<br><br>
+	<input type="text" nmae="name" autofocus> <br> <br>
+	Lname<br>
+	<input type="text"Lname="Lname"<br> <br> <br>
+	hobbies<br>
+	<input type="checkbox" name="hobbies" value="cric". cricket
+	<input type="checkbox" name="hobby" value="sw"> swimming
+	<input type="chekcbox"name="hobby"value="cric"> running <br>
+	password<br>
+	<input type="password" name="pwd"><br>
+	select ur car:
+	<select name="cars" size="2" multiple >
+	<option value="c1"> car1</option>
+	<option value="c2"selected> car2</option>
+    <option> car3</option>
+	<option> car4</option> 
+	</select> <br> <br>
+	<textarea name="adr" rows="5" cols="20"> </textarea> <br> <br>
+	select color
+	<input type="color"> <br>
+	birthdate
+	<input type="date" <br> <br>
+	enter a date before 1978-08-09: <br>
+	<input type="date" name="bday" max="1979-12-3"> <br> <br>
+	enter a date after 1998-08-07: <br>
+	<input type="date" name="bday" min ="1998-02-06"> <br><br>
+	quantity:
+	<input type="name="points" min="0" max="100" step="10" value="30"> <br>
+	Email:
+	<input type="email" required multiple> </br>
+	<label> your cars name: </label>
+	    <input list="cars" id="carsinput">
+		<datalist id="cars">
+		    <option value="bmw"/>
+			<option value="bentley"/>
+             <option value="mercedes"/>			
+			 <option value="audi"/>
+		</datalist> <br>
+		
+	<input type="submit" value="insert"><br> <br>
+	<input type="reset" value="reset!!"> <br>
+	<button type="button">click me! </button>
+    </fieldset>
+   </form>
+	
+    <input type="submit" value="submit">
+	</form>
+</body>
+</html>

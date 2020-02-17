@@ -1,0 +1,39 @@
+<html>
+<body>
+<button onclick="myfunction">Click here</button>
+<script>
+function myfunction()
+{
+var day=new Date().getDay();
+switch(day)
+{
+case0:
+	x="Today it's sunday";
+	break;
+case1:
+	x="Today it's monday";
+	break;
+case2:
+	x="Today it's tuesday";
+	break;
+case3:
+	x="Today it's wednesday";
+	break;
+case4:
+	x="Today it's thursday";
+	break;
+case5:
+	x="Today it's friday";
+	break;
+case6:
+	x="Today it's saturday";
+	break;
+deafault:	
+	x="Not proper data";
+}
+alert(x);
+}
+
+</script>
+</body>
+</html>

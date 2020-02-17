@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <form>Buttons:
+        <input type="button" id="firstbtn" value="OK">
+        <input type="button" id="secondbtn" value="OK">
+    </form>
+    <p>Click the button below to disable the first button above.</p>
+    <button onclick="disableElement()">Disable Button</button>
+    <button onclick="enableElement()">Enable Button</button>
+
+    <script>
+        function disableElement() {
+            document.getElementById("firstbtn").disabled=true;
+            document.getElementById("firstbtn").style.background='red';
+            document.getElementById("secondbtn").style.background='blue'
+        }
+        function enableElement() {
+            document.getElementById("firstbtn").disabled=false;
+            document.getElementById("firstbtn").style.background='blue';
+            document.getElementById("secondbtn").style.background='red';
+        }
+    </script>
+</body>
+</html>

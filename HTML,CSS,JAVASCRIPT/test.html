@@ -1,0 +1,28 @@
+<html>
+<body>
+<script>
+var x=document.URL;
+var y=x.split('?');
+var z=y[1];
+var ab=z.split('&');
+/*var pn=ab[0];
+var pnam= pn.substring(pn.indexOf('=')+1);
+
+document.write(pnam);
+*/
+
+var pn,a;
+for(var i=0; i<=3; i++)
+{
+pn=ab[i];
+a= pn.substring(pn.indexOf('=')+1);
+document.write("&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;");
+document.write(a);
+} 
+
+</script>
+
+
+
+</body>
+</html>
